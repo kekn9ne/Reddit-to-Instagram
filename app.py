@@ -10,10 +10,8 @@ from instabot import Bot
 bot = Bot()
 bot.login(username=config.instagram_username, password=config.instagram_password)
 
-
 def bot_login():
     reddit = praw.Reddit(client_id=config.client_id, client_secret=config.client_secret, user_agent=config.user_agent)
-    
     return reddit
 
 def bot_run(reddit, blacklist):
@@ -42,12 +40,15 @@ def bot_run(reddit, blacklist):
 
             bot.upload_photo(submission.id + ".jpg", caption=config.post_caption.format(title=str(submission.title), author="u/" + str(submission.author), subreddit="r/" + str(submission.subreddit), score=str(submission.score)))
 
-            os.remove(submission.id + ".png")
-            os.remove(submission.id + ".jpg.REMOVE_ME")
-
             blacklist.append(submission.id)
             with open("./blacklist.txt", "a") as f:
                 f.write(submission.id + "\n")
+
+            try:
+                os.remove(submission.id + ".png")
+                os.remove(submission.id + ".jpg.REMOVE_ME")
+            except:
+                return
 
             return
         else:
