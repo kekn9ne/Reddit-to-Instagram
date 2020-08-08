@@ -14,17 +14,16 @@ Reddit-to-Instagram allows you to get hot/top/new/rising posts from various subr
 ``client_secret:`` Your Reddit App's client secret.  
 ``user_agent:`` Set to whatever you want, but don't leave empty.  
 
-``post_type:`` If typed "hot", it will search for hot Reddit posts. (You can use "hot", "top", "rising", "new".)  
-&mdash; ``{title}:`` gets formatted to Reddit post's title.  
-&mdash; ``{author}:`` gets formatted to Reddit post's author.  
-&mdash; ``{subreddit}:`` gets formatted to Reddit post's subreddit.  
-&mdash; ``{score}:`` gets formatted to Reddit post's score.  
-
+``post_type:`` If typed "hot", it will search for hot Reddit posts. (You can use "hot", "top", "rising", "new".)    
 ``subreddits:`` Subreddits to be monitored.  
 
 
 ``instagram_username:`` Your Instagram username.   
 ``instagram_password:`` Your Instagram account.  
 ``post_caption:`` Instagram post's caption.  
+&mdash; ``{title}:`` gets formatted to Reddit post's title.  
+&mdash; ``{author}:`` gets formatted to Reddit post's author.  
+&mdash; ``{subreddit}:`` gets formatted to Reddit post's subreddit.  
+&mdash; ``{score}:`` gets formatted to Reddit post's score.
 
 ``wait_before_posting:`` Wait time before reposting a Reddit post to Instagram.
