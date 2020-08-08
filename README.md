@@ -1,5 +1,5 @@
 # Reddit-to-Instagram
-Reddit-to-Instagram allows you to get hot/top/new/rising posts from various subreddits and repost them to your Instagram account automataically. **Don't you ever use your main Instagram account with this bot. What this bot does is agains the Instagram's rules and your account may get banned. So, use another account.**
+Reddit-to-Instagram allows you to get hot/top/new/rising posts from various subreddits and repost them to your Instagram account automataically. **Don't you ever use your main Instagram account with this bot. What this bot does is against the Instagram's rules and your account may get banned. So, use another account.**
 
 ## Usage
 
