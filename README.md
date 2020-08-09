@@ -16,9 +16,13 @@ Reddit-to-Instagram allows you to get hot/top/new/rising posts from various subr
 ``user_agent:`` Set to whatever you want, but don't leave empty.  
 
 ``post_type:`` If typed "hot", it will search for hot Reddit posts. (You can use "hot", "top", "rising", "new".)    
-``subreddits:`` Subreddits to be monitored.  
-
-
+``subreddits:`` Subreddits to be monitored.    
+  
+``comment_submission:`` If true, the bot comments to the post in Reddit before reposting it. Some subreddit mods may not be okay with reposting their content.  
+``submission_comment:`` Comment.  
+&mdash; ``{instagram}:`` Gets formatted to your Instagram username.  
+&mdash; ``{instagram_post}:`` Gets formatted to the Instagram post's url.  
+  
 ``instagram_username:`` Your Instagram username.   
 ``instagram_password:`` Your Instagram account.  
 ``post_caption:`` Instagram post's caption.  

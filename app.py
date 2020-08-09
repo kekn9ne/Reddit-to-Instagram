@@ -38,8 +38,11 @@ def bot_run(reddit, blacklist):
             resize(submission.id + ".png", 1080, 1080, submission.id)
             time.sleep(3)
 
-            bot.upload_photo(submission.id + ".jpg", caption=config.post_caption.format(title=str(submission.title), author="u/" + str(submission.author), subreddit="r/" + str(submission.subreddit), score=str(submission.score)))
+            img = bot.upload_photo(submission.id + ".jpg", caption=config.post_caption.format(title=str(submission.title), author="u/" + str(submission.author), subreddit="r/" + str(submission.subreddit), score=str(submission.score)))
 
+            if config.comment_submission:
+                submission.reply(config.submission_comment.format(instagram=bot.username, instagram_post="https://www.instagram.com/p/" + img['code']))
+            
             blacklist.append(submission.id)
             with open("./blacklist.txt", "a") as f:
                 f.write(submission.id + "\n")
